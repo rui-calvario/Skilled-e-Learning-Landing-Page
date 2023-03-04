@@ -1,7 +1,112 @@
-//Design System Goes Here
+// DESIGN SYSTEM //
+//===============//
+
+// COLOURS //
+//=========//
+//Standard Colours
 $purple: #666ca3;
 $dark-blue: #13183f;
 $grey: #83869a;
 $pink: #f74780;
 $light-pink: #ffa7c3;
 $white: #fff;
+
+//Gradient Colours
+$grad-orange: #ff6f48;
+$grad-pink: #f02aa6;
+$grad-purple: #4851ff;
+
+// FONTS //
+//======//
+
+//Header
+@mixin headingXL {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size: 56px;
+	line-height: 70px;
+	font-weight: 800;
+}
+
+@mixin headingL {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size: 40px;
+	line-height: 51px;
+	font-weight: 800;
+}
+
+@mixin headingM {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size: 32px;
+	line-height: 40px;
+	font-weight: 800;
+}
+
+@mixin headingS {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 800;
+}
+
+//Body
+
+@mixin bodyM {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 500;
+}
+
+@mixin bodyS {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 700;
+}
+
+// BUTTONS //
+//=========//
+
+//Button Size
+@mixin btnSize {
+	width: 167px;
+	height: 56px;
+	border-radius: 50px;
+	border: 0;
+	cursor: pointer;
+}
+
+//Dark Button
+@mixin darkBtn {
+	@include btnSize;
+	background-color: $dark-blue;
+}
+
+@mixin darkBtnHover {
+	@include btnSize;
+	background-color: $purple;
+}
+
+//Orange Button
+@mixin orangeBtn {
+	@include btnSize;
+	background-image: linear-gradient($grad-orange, $grad-pink);
+}
+
+@mixin orangeBtnHover {
+	@include btnSize;
+	background-color: $white;
+	background-image: linear-gradient(rgba(255, 111, 72, 0.7), rgba(240, 42, 166, 0.7));
+}
+
+//Purple Button
+@mixin purpleBtn {
+	@include btnSize;
+	background-image: linear-gradient($grad-purple, $grad-pink);
+}
+
+@mixin purpleBtnHover {
+	@include btnSize;
+	background-color: $white;
+	background-image: linear-gradient(rgba(72, 81, 255, 0.7), rgba(240, 42, 166, 0.7));
+}
