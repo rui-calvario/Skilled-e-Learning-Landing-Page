@@ -12,7 +12,7 @@ header {
 .header-container {
 	margin: 0 auto;
 	padding: 0;
-	max-width: 1110px;
+	max-width: 1240px;
 	height: inherit;
 	display: flex;
 	flex-direction: row;
@@ -35,7 +35,7 @@ header {
 
 // MEDIA QUERIES //
 //===============//
-@media screen and (min-width: 768px) and (max-width: 1120px) {
+@media screen and (min-width: 768px) and (max-width: 1250px) {
 	.header-container {
 		padding: 0px 2%;
 	}

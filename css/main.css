@@ -8,7 +8,7 @@ header {
 .header-container {
   margin: 0 auto;
   padding: 0;
-  max-width: 1110px;
+  max-width: 1240px;
   height: inherit;
   display: flex;
   flex-direction: row;
@@ -37,7 +37,7 @@ header {
   cursor: pointer;
   background-color: #666ca3; }
 
-@media screen and (min-width: 768px) and (max-width: 1120px) {
+@media screen and (min-width: 768px) and (max-width: 1250px) {
   .header-container {
     padding: 0px 2%; } }
 
@@ -55,7 +55,7 @@ footer {
 .footer-container {
   margin: 0 auto;
   padding: 0;
-  max-width: 1110px;
+  max-width: 1240px;
   height: inherit;
   display: flex;
   flex-direction: row;
@@ -85,7 +85,7 @@ footer {
   background-color: #fff;
   background-image: linear-gradient(rgba(72, 81, 255, 0.7), rgba(240, 42, 166, 0.7)); }
 
-@media screen and (min-width: 768px) and (max-width: 1120px) {
+@media screen and (min-width: 768px) and (max-width: 1250px) {
   .footer-container {
     padding: 0px 2%; } }
 
@@ -100,3 +100,88 @@ footer {
 body {
   margin: 0;
   padding: 0; }
+
+main {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%; }
+
+.landing {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1240px;
+  height: calc(80vh - 120px);
+  border: 1px solid black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center; }
+
+.intro-description {
+  width: 50%;
+  border: 1px solid red; }
+
+.intro-description h1 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 40px;
+  line-height: 51px;
+  font-weight: 800;
+  color: #13183f; }
+
+.intro-description p {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #83869a; }
+
+.intro-description .landing-btn {
+  width: 167px;
+  height: 56px;
+  border-radius: 50px;
+  border: 0;
+  cursor: pointer;
+  background-image: linear-gradient(#ff6f48, #f02aa6);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #fff; }
+
+.intro-description .landing-btn:hover {
+  width: 167px;
+  height: 56px;
+  border-radius: 50px;
+  border: 0;
+  cursor: pointer;
+  background-color: #fff;
+  background-image: linear-gradient(rgba(255, 111, 72, 0.7), rgba(240, 42, 166, 0.7));
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #fff; }
+
+.info {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  background-image: linear-gradient(#fff, #f0f1ff);
+  border: 1px solid pink; }
+
+.info-container {
+  margin: 0 auto;
+  max-width: 1240px;
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid black; }
+
+.popular {
+  border: 1px solid black; }
+
+.animation {
+  border: 1px solid black; }
+
+.design {
+  border: 1px solid black; }
