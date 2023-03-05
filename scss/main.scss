@@ -1,5 +1,6 @@
 @import 'design-system';
 @import 'header';
+@import 'info-blocks';
 @import 'footer';
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
 
@@ -70,29 +71,90 @@ main {
 //=============//
 .info {
 	margin: 0 auto;
-	padding: 0;
+	padding: 40px 0 80px 0;
 	width: 100%;
 	background-image: linear-gradient($white, $bg-grey);
-	border: 1px solid pink;
 }
 
 .info-container {
 	margin: 0 auto;
 	max-width: 1240px;
 	display: grid;
-	grid-column-gap: 10px;
+	grid-column-gap: 2rem;
+	grid-row-gap: 80px;
 	grid-template-columns: repeat(3, 1fr);
-	border: 1px solid black;
 }
 
 .popular {
-	border: 1px solid black;
+	@include intro-info-block;
 }
 
-.animation {
-	border: 1px solid black;
+.animation,
+.design,
+.photography,
+.crypto,
+.business {
+	@include info-block;
+	@include info-block-content;
 }
 
-.design {
-	border: 1px solid black;
+.icons {
+	margin-top: -70px;
+}
+
+.info-headings {
+	@include headingS;
+}
+
+.info-description {
+	@include bodyM;
+	margin: -10px 0 20px 0;
+}
+
+.info-btn {
+	background: none;
+	border: none;
+	color: $pink;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 800;
+	cursor: pointer;
+}
+
+.info-btn:hover {
+	color: rgba($color: $pink, $alpha: 0.7);
+}
+
+// MEDIA QUERIES //
+//===============//
+
+//Viewports between 1025px and 1250px wide
+@media screen and (min-width: 1025px) and (max-width: 1250px) {
+	.info-container {
+		padding: 2%;
+		grid-column-gap: 1.2rem;
+	}
+}
+
+//Viewports between 768px and 1024 wide
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.info-container {
+		padding: 2%;
+		grid-column-gap: 2rem;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+//Viewports between 320px and 768px wide
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	.info-container {
+		padding: 2%;
+		grid-column-gap: 0rem;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.popular {
+		@include intro-info-block-mobile;
+	}
 }

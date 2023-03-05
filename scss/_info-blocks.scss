@@ -1,0 +1,40 @@
+@import 'design-system';
+
+@mixin intro-info-block {
+	padding: 1.5em;
+	max-width: 100%;
+	height: 322px;
+	border-radius: 25px;
+	background-image: linear-gradient($grad-orange, $grad-pink);
+	box-shadow: 2px 5px 20px rgba($color: #06168d, $alpha: 0.1);
+	@include headingM;
+	color: $white;
+}
+
+@mixin intro-info-block-mobile {
+	padding: 1.5em;
+	max-width: 100%;
+	height: auto !important;
+	border-radius: 25px;
+	background-image: linear-gradient($grad-orange, $grad-pink);
+	box-shadow: 2px 5px 20px rgba($color: #06168d, $alpha: 0.1);
+	@include headingM;
+	color: $white;
+}
+
+@mixin info-block {
+	padding: 2.5em;
+	max-width: 100%;
+	height: 322px;
+	border-radius: 25px;
+	background-color: $white;
+	border: 1px solid rgba($color: #979797, $alpha: 0.1);
+	box-shadow: 5px 5px 20px rgba($color: #06168d, $alpha: 0.05);
+}
+
+@mixin info-block-content {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: flex-start;
+}
