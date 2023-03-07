@@ -34,6 +34,10 @@ body {
 	top: -150px;
 }
 
+.hero-image-mobile {
+	display: none;
+}
+
 // LANDING //
 //=========//
 main {
@@ -179,14 +183,14 @@ main {
 	}
 
 	.intro-description {
-		width: 50%;
+		width: 48%;
 		padding: 0 2%;
 	}
 
 	.hero-image img {
-		width: 850px;
+		width: 820px;
 		right: -350px;
-		top: -100px;
+		top: -80px;
 	}
 }
 
@@ -200,5 +204,42 @@ main {
 
 	.popular {
 		@include intro-info-block-mobile;
+	}
+
+	.hero-image {
+		display: none;
+	}
+
+	.landing {
+		margin: 0 auto;
+		padding: 0;
+		max-width: 768px;
+		height: calc(100vh - 120px);
+		display: flex;
+		flex-flow: column nowrap;
+		border: 1px solid black;
+	}
+
+	.intro-description {
+		width: 100%;
+		padding: 0 2%;
+		border: 1px solid yellow;
+	}
+
+	.hero-image img {
+		display: none;
+	}
+
+	.hero-image-mobile {
+		margin: 0 auto;
+		padding: 0;
+		position: relative;
+		width: 100%;
+		height: auto;
+		border: 1px solid pink;
+	}
+
+	.hero-image-mobile img {
+		width: 500px;
 	}
 }
