@@ -306,25 +306,21 @@ main {
   .hero-image {
     display: none; }
   .landing {
-    margin: 0 auto;
-    padding: 0;
     max-width: 768px;
-    height: calc(100vh - 120px);
+    height: auto;
     display: flex;
-    flex-flow: column nowrap;
-    border: 1px solid black; }
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; }
   .intro-description {
-    width: 100%;
-    padding: 0 2%;
-    border: 1px solid yellow; }
-  .hero-image img {
-    display: none; }
+    padding: 0 0;
+    width: 80%; }
   .hero-image-mobile {
     margin: 0 auto;
-    padding: 0;
-    position: relative;
-    width: 100%;
-    height: auto;
-    border: 1px solid pink; }
+    padding: 0 2%;
+    display: block;
+    width: 100%; }
   .hero-image-mobile img {
-    width: 500px; } }
+    margin: 0 auto;
+    padding: 0;
+    max-width: 90%; } }
